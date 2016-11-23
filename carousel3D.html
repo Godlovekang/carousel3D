@@ -16,7 +16,10 @@
             width: 100%;
             margin: 0;
             padding: 0;
-            /*background-color: #000;*/
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, .2);
         }
 
         .container {
@@ -24,7 +27,7 @@
             top: 50%;
             left: 50%;
             margin-top: -300px;
-            margin-left: -200px;
+            margin-left: -145px;
             width: 400px;
             height: 500px;
             perspective: 5000px;
@@ -42,58 +45,71 @@
         .carousel figure {
             position: absolute;
             height: 500px;
-            width: 400px;
+            width: 300px;
             box-sizing: border-box;
+            border: 10px solid #fff;
             background-color: #fff;
             box-sizing: border-box;
+            font-size: 80px;
+            line-height: 500px;
+            text-align: center;
+            font-weight: bolder;
             /*backface-visibility: hidden;*/
         }
 
         .carousel figure:nth-child(1) {
             transform: rotateY(0deg) translateZ(483px);
-            background: url(images/1.jpg) no-repeat center center;
+            /*background: url(images/1.jpg) no-repeat center center;*/
+            background-color: #4285f4;
             background-size: contain;
         }
 
         .carousel figure:nth-child(2) {
             transform: rotateY(45deg) translateZ(483px);
-            background: url(images/2.jpg) no-repeat center center;
+            /*background: url(images/2.jpg) no-repeat center center;*/
+            background-color: #0f9d58;
             background-size: contain;
         }
 
         .carousel figure:nth-child(3) {
             transform: rotateY(90deg) translateZ(483px);
-            background: url(images/3.jpg) no-repeat center center;
+            /*background: url(images/3.jpg) no-repeat center center;*/
+            background-color: #d4b400;
             background-size: contain;
         }
 
         .carousel figure:nth-child(4) {
             transform: rotateY(135deg) translateZ(483px);
-            background: url(images/4.jpg) no-repeat center center;
+            /*background: url(images/4.jpg) no-repeat center center;*/
+            background-color: #db4437;
             background-size: contain;
         }
 
         .carousel figure:nth-child(5) {
             transform: rotateY(180deg) translateZ(483px);
-            background: url(images/5.jpg) no-repeat center center;
+            /*background: url(images/5.jpg) no-repeat center center;*/
+            background-color: #0f9d58;
             background-size: contain;
         }
 
         .carousel figure:nth-child(6) {
             transform: rotateY(225deg) translateZ(483px);
-            background: url(images/6.jpg) no-repeat center center;
+            /*background: url(images/6.jpg) no-repeat center center;*/
+            background-color: #4285f4;
             background-size: contain;
         }
 
         .carousel figure:nth-child(7) {
             transform: rotateY(270deg) translateZ(483px);
-            background: url(images/7.jpg) no-repeat center center;
+            /*background: url(images/7.jpg) no-repeat center center;*/
+            background-color: #d4b400;
             background-size: contain;
         }
 
         .carousel figure:nth-child(8) {
             transform: rotateY(315deg) translateZ(483px);
-            background: url(images/8.jpg) no-repeat center center;
+            /*background: url(images/8.jpg) no-repeat center center;*/
+            background-color: #db4437;
             background-size: contain;
         }
         /*.carousel figure:nth-child(9) {
@@ -139,14 +155,14 @@
     <div class="btn next">向右转</div>
     <div class="container">
         <div class="carousel">
-            <figure class="figure1"></figure>
-            <figure class="figure2"></figure>
-            <figure class="figure3"></figure>
-            <figure class="figure4"></figure>
-            <figure class="figure5"></figure>
-            <figure class="figure6"></figure>
-            <figure class="figure7"></figure>
-            <figure class="figure8"></figure>
+            <figure class="figure1">1</figure>
+            <figure class="figure2">8</figure>
+            <figure class="figure3">7</figure>
+            <figure class="figure4">6</figure>
+            <figure class="figure5">5</figure>
+            <figure class="figure6">4</figure>
+            <figure class="figure7">3</figure>
+            <figure class="figure8">2</figure>
             <!-- <figure class="figure9"></figure> -->
         </div>
     </div>
