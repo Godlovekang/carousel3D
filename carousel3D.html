@@ -31,7 +31,6 @@
             width: 400px;
             height: 500px;
             perspective: 5000px;
-            background-color: rgba(0, 0, 0, .2);
         }
 
         .container .carousel {
@@ -51,72 +50,101 @@
             position: absolute;
             height: 500px;
             width: 400px;
+            /*backface-visibility: hidden;*/
+        }
+
+        .carousel figure>div {
+            height: 100%;
+            width: 300px;
+            margin: 0 auto;
             box-sizing: border-box;
             border: 10px solid #fff;
-            background-color: #fff;
+            /*background-color: #fff;*/
             box-sizing: border-box;
             font-size: 80px;
             line-height: 500px;
             text-align: center;
             font-weight: bolder;
-            opacity: .5;
-            /*backface-visibility: hidden;*/
         }
 
         .carousel figure:nth-child(1) {
             transform: rotateY(0deg) translateZ(483px);
             /*background: url(images/1.jpg) no-repeat center center;*/
-            background-color: #4285f4;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(1)>div {
+            background-color: #4285f4;
         }
 
         .carousel figure:nth-child(2) {
             transform: rotateY(45deg) translateZ(483px);
             /*background: url(images/2.jpg) no-repeat center center;*/
-            background-color: #0f9d58;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(2)>div {
+            background-color: #0f9d58;
         }
 
         .carousel figure:nth-child(3) {
             transform: rotateY(90deg) translateZ(483px);
             /*background: url(images/3.jpg) no-repeat center center;*/
-            background-color: #d4b400;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(3)>div {
+            background-color: #d4b400;
         }
 
         .carousel figure:nth-child(4) {
             transform: rotateY(135deg) translateZ(483px);
             /*background: url(images/4.jpg) no-repeat center center;*/
-            background-color: #db4437;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(4)>div {
+            background-color: #db4437;
         }
 
         .carousel figure:nth-child(5) {
             transform: rotateY(180deg) translateZ(483px);
             /*background: url(images/5.jpg) no-repeat center center;*/
-            background-color: #0f9d58;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(5)>div {
+            background-color: #0f9d58;
         }
 
         .carousel figure:nth-child(6) {
             transform: rotateY(225deg) translateZ(483px);
             /*background: url(images/6.jpg) no-repeat center center;*/
-            background-color: #4285f4;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(6)>div {
+            background-color: #4285f4;
         }
 
         .carousel figure:nth-child(7) {
             transform: rotateY(270deg) translateZ(483px);
             /*background: url(images/7.jpg) no-repeat center center;*/
-            background-color: #d4b400;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(7)>div {
+            background-color: #d4b400;
         }
 
         .carousel figure:nth-child(8) {
             transform: rotateY(315deg) translateZ(483px);
             /*background: url(images/8.jpg) no-repeat center center;*/
-            background-color: #db4437;
             background-size: contain;
+        }
+
+        .carousel figure:nth-child(8)>div {
+            background-color: #db4437;
         }
         /*.carousel figure:nth-child(9) {
             transform: rotateY(320deg) translateZ(483px);
@@ -161,14 +189,30 @@
     <div class="btn next">向右转</div>
     <div class="container">
         <div class="carousel">
-            <figure class="figure1">1</figure>
-            <figure class="figure2">8</figure>
-            <figure class="figure3">7</figure>
-            <figure class="figure4">6</figure>
-            <figure class="figure5">5</figure>
-            <figure class="figure6">4</figure>
-            <figure class="figure7">3</figure>
-            <figure class="figure8">2</figure>
+            <figure class="figure1">
+                <div>1</div>
+            </figure>
+            <figure class="figure2">
+                <div>8</div>
+            </figure>
+            <figure class="figure3">
+                <div>7</div>
+            </figure>
+            <figure class="figure4">
+                <div>6</div>
+            </figure>
+            <figure class="figure5">
+                <div>5</div>
+            </figure>
+            <figure class="figure6">
+                <div>4</div>
+            </figure>
+            <figure class="figure7">
+                <div>3</div>
+            </figure>
+            <figure class="figure8">
+                <div>2</div>
+            </figure>
             <!-- <figure class="figure9"></figure> -->
         </div>
     </div>
